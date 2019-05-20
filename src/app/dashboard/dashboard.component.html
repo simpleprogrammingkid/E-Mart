@@ -1,0 +1,24 @@
+
+
+
+<h3>{{top_products}}</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let hero of heroes" class="col-1-4"
+      routerLink="/detail/{{hero.id}}">
+    <div class="module hero">
+ 
+      <img src="{{hero.imgUrl}}"> 
+      <br><br>
+      <button mat-raised-button style="background-color:lightgreen;color:white;">Add to Cart</button>
+    
+      <span style="float:right;" ><b>$ {{hero.price}}</b></span>    
+    </div>
+    
+  </a>
+
+</div>
+
+<app-hero-search></app-hero-search>
+
+      <!--<h4>{{hero.name}}</h4>-->
+    <!--<div class="photo">--> 

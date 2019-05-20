@@ -1,0 +1,17 @@
+<mat-card-content>
+    <form class="my-form">
+       <mat-form-field class="full-width">
+              <mat-label>E-mail</mat-label>
+              <input  matInput  placeholder="E-mail"  name="email"  required>
+           </mat-form-field>
+           <mat-form-field class="full-width">
+              <mat-label>Password</mat-label>
+              <input matInput  placeholder="Password" name="password" type="password" required>
+           </mat-form-field>
+           
+           
+           <mat-card-actions>
+            <button mat-raised-button (click)="register()" color="primary">LOGIN</button>
+          </mat-card-actions>
+    </form>
+  </mat-card-content>

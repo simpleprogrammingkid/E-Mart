@@ -1,0 +1,10 @@
+#table2 {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+  }
+  @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+

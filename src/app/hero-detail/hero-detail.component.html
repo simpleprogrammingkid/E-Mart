@@ -1,0 +1,32 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} </h2>
+  <!--<div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+  <div><span>Price: </span>{{hero.price}}</div>
+-->
+   <img src="{{hero.imgUrl}}">
+   <br>
+   <br>
+   <table id="table2">
+        <tr>
+          <td>Product Id</td>
+          <td>&nbsp;&nbsp; : {{hero.id}}</td>
+        </tr>
+        <tr>
+          <td>Product Name</td>
+          <td>&nbsp;&nbsp; : <input [(ngModel)]="hero.name" placeholder="name"/></td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>&nbsp;&nbsp; : $ {{hero.price}}</td>
+        </tr>
+   </table>
+   <br>
+
+  <button mat-raised-button  (click)="goBack()">go back</button> &nbsp;&nbsp;&nbsp;
+  <button mat-raised-button color="primary" (click)="save()">save</button>
+</div>
